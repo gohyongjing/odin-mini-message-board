@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+
+  form(method='POST' action='')
+    
+    div.form-group
+      label(for='text') Text:
+      input#text.form-control(type='text', placeholder='Hello World!' name='text')
+
+    div.form-group
+      label(for='user') Username:
+      input#user.form-control(type='text', placeholder='Your name' name='user')
+
+    button(type='submit') Submit
+
